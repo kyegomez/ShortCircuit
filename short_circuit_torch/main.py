@@ -1,4 +1,3 @@
-import torch
 from zeta.nn import MultiQueryAttention, FeedForward
 from torch import nn, Tensor
 
@@ -81,7 +80,7 @@ class Transformer(nn.Module):
         return x
 
 
-class PolicyModuleDetails(nn.Module):
+class PolicyModule(nn.Module):
     def __init__(
         self,
         dim: int,
@@ -175,7 +174,7 @@ class ShortCircuitNet(nn.Module):
         )
 
         # Policy Module
-        self.policy_module = PolicyModuleDetails(
+        self.policy_module = PolicyModule(
             dim,
             heads,
             depth,
@@ -211,4 +210,3 @@ class ShortCircuitNet(nn.Module):
         self.tanded = self.tanh_act(value)
 
         return softed, self.tanded
-

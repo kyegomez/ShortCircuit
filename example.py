@@ -1,5 +1,5 @@
-import torch 
-from shortcircuit.main import ShortCircuitNet
+import torch
+from short_circuit_torch.main import ShortCircuitNet
 
 # Create an instance of the ShortCircuitNet model with the specified parameters
 model = ShortCircuitNet(512, 6, 8, 64, 2048, 0.1)

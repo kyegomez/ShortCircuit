@@ -4,6 +4,11 @@
 # ShortCircuit
 
 
+## Install
+```
+pip3 install -U short-circuit-torch
+
+```
 
 
 ## Example
