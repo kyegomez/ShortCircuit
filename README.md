@@ -5,9 +5,8 @@
 
 
 ## Install
-```
+```bash
 pip3 install -U short-circuit-torch
-
 ```
 
 
