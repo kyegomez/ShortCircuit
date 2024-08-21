@@ -23,10 +23,10 @@ model = ShortCircuitNet(512, 6, 8, 64, 2048, 0.1)
 input_tensor = torch.randn(1, 512, 512)
 
 # Pass the input tensor through the model to get the output tensor
-output_tensor = model(input_tensor)
+values, targets = model(input_tensor)
 
 # Print the output tensor
-print(output_tensor)
+print(values, targets) 
 ```
 
 
