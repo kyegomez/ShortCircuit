@@ -32,13 +32,13 @@ print(output_tensor)
 
 
 # Missing
-Input Sequence:
-Node Hidden
-Embeddings
-Target Sequence:
-Target Hidden
-Embedding
+- [ ] Node Hidden Embeddings
+- [ ] Target Sequence:
+- [ ] Target Hidden Embedding
+- [ ] Node PE,
+- [ ] Target PE
 
+Need your help to implement this, please submit a pr if you can.
 
 # License
 MIT
